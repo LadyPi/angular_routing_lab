@@ -1,6 +1,34 @@
-var app = angular.module('wineApp', ['ngRoute']);
-
+angular.module('InfamousCriminals')
+.controller('CriminalsController', CriminalsController);
 console.log('Angular is working.');
+
+/////////////////
+// Needs to be tested
+////////////////
+
+// CriminalsController.inject = ['$resource'];
+
+// angular.module.factory('Criminals', ['$resource', function($resource)] {
+//      return $resource('localhost:3000/criminals/:id', null,
+//      {
+//       'update': {method:'PUT'}
+//       'query': {isArray: false}
+//      });
+//      }]);
+
+//      function CriminalsController($resource) {
+//      var self = this;
+//      self.all = [];
+
+//      var allCriminals.query(function)() {
+//         self.all = allCriminals.criminals
+//         });
+     
+//     function deleteCriminals(criminal)
+//         Criminals.delete({ id: criminal._id });
+//         };
+        
+//      }
 
 ////////////
 // ROUTES //
